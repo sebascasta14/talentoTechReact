@@ -38,8 +38,8 @@ export default function HouseList(){
             <thead>
                 <tr className="bg-slate-500">
                     <th className="px-4 py-2 text-white">Address</th>
-                    <th className="px-4 py-2 text-white">City</th>
                     <th className="px-4 py-2 text-white">State</th>
+                    <th className="px-4 py-2 text-white">City</th>
                     <th className="px-4 py-2 text-white">Size</th>
                     <th className="px-4 py-2 text-white">Type</th>
                     <th className="px-4 py-2 text-white">Zip Code</th>
@@ -55,8 +55,8 @@ export default function HouseList(){
                 {houses.map(house => (
                 <tr key={house._id}>
                     <td className="border-y-2 px-4 py-2 border-indigo-600">{house.address}</td>
-                    <td className="border-y-2 px-4 py-2 border-indigo-600">{house.city}</td>
                     <td className="border-y-2 px-4 py-2 border-indigo-600">{house.state}</td>
+                    <td className="border-y-2 px-4 py-2 border-indigo-600">{house.city}</td>
                     <td className="border-y-2 px-4 py-2 border-indigo-600">{house.size}</td>
                     <td className="border-y-2 px-4 py-2 border-indigo-600">{house.type}</td>
                     <td className="border-y-2 px-4 py-2 border-indigo-600">{house.zip_code}</td>

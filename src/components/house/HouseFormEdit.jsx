@@ -23,7 +23,7 @@ export default function HouseFormEdit(){
             code: params.code,  // Seteamos en code por el que me llega como parametro
             address: e.target.address.value,
             city: e.target.city.value,
-            state: e.target.state.value,
+            state: e.target.state.value.split("-")[1],
             size: e.target.size.value,
             type: e.target.type.value,
             zip_code: e.target.zip_code.value,
