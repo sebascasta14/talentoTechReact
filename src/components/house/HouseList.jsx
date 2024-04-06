@@ -34,10 +34,10 @@ export default function HouseList(){
 
     return (
         <div className="flex justify-center">
-        <div className="relative mx-auto max-w-screen-lg overflow-x-auto shadow-md sm:rounded-lg">
+<div className="relative mx-auto max-w-screen-lg overflow-x-auto shadow-md sm:rounded-lg">
             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-white">
-                <tr>
+                <tr className="bg-slate-500">
                     <th scope="col" className="px-6 py-3">Address</th>
                     <th scope="col" className="px-6 py-3">State</th>
                     <th scope="col" className="px-6 py-3">City</th>
@@ -66,7 +66,7 @@ export default function HouseList(){
                     <td className="px-6 py-4">{house.bathrooms}</td>
                     <td className="px-6 py-4">{house.price}</td>
                     <td className="px-6 py-4">
-                        <img className="size-20 transition-transform duration-1000 transform hover:scale-110 max-w-none"
+                        <img className="size-40 transition-transform duration-1000 transform hover:scale-110 max-w-none"
                             src={`http://localhost:3000/${house.image}`}/></td>
                     <td className="px-6 py-4">
                     <div className="inline-flex rounded-md shadow-sm" role="group">
